@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="1.Which of the following are the two main branches of biology? "
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/botany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Botany" />
+
+            <CheckBox
+                android:id="@+id/zoology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zoology" />
+
+            <CheckBox
+                android:id="@+id/entomology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entomology" />
+
+            <CheckBox
+                android:id="@+id/ecology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ecology" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="2.What is the basic unit of all know living organisms?"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/answer2_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:hint="Answer"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="3.Located within the nucleus, it is responsible for producing ribosomes:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp">
+
+            <RadioButton
+                android:id="@+id/centrosome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="centrosome" />
+
+            <RadioButton
+                android:id="@+id/nucleolus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nucleolus" />
+
+            <RadioButton
+                android:id="@+id/lysosome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lysosome" />
+
+            <RadioButton
+                android:id="@+id/endoplasmic_reticulum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="endoplasmic reticulum" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="4.Identify the organelle pictured:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/mitochondria" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp">
+
+            <RadioButton
+                android:id="@+id/chloroplast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="chloroplast" />
+
+            <RadioButton
+                android:id="@+id/endoplasmic_reticulum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="endoplasmic reticulum" />
+
+            <RadioButton
+                android:id="@+id/golgi_apparatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="golgi apparatus" />
+
+            <RadioButton
+                android:id="@+id/mitochondria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mitochondria" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="5.The jelly-like interior of the cell is called the"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/answer3_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:hint="Answer" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp"
+            android:onClick="submitAnswer"
+            android:text="submit"
+            android:textAllCaps="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/score_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="score:"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/score_view"
+                android:color="@android:color/black"
+                android:text=""
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
